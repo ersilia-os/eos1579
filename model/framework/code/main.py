@@ -1,40 +1,29 @@
 # imports
 import os
 import csv
-import joblib
 import sys
+from Metabokiller import mk_predictor as mk
+from Metabokiller import EnsembleMK
 from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
 
 # parse arguments
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-# current file directory
-root = os.path.dirname(os.path.abspath(__file__))
-
-# checkpoints directory
-checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
-
-# read checkpoints (here, simply an integer number: 42)
-ckpt = joblib.load(os.path.join(checkpoints_dir, "checkpoints.joblib"))
-
-# model to be run (here, calculate the Molecular Weight and add ckpt (42) to it)
-def my_model(smiles_list, ckpt):
-    return [MolWt(Chem.MolFromSmiles(smi))+ckpt for smi in smiles_list]
-    
-# read SMILES from .csv file, assuming one column with header
+#read SMILES from input file
 with open(input_file, "r") as f:
     reader = csv.reader(f)
-    next(reader) # skip header
+    next(reader)
     smiles_list = [r[0] for r in reader]
-    
-# run model
-outputs = my_model(smiles_list, ckpt)
+
+#Canonicalize SMILES
+canonical_smiles_list = [Chem.MolToSmiles(Chem.MolFromSmiles(smi), True) for smi in smiles_list]
+
+#Run Metabokiller ensemble prediction
+result = EnsembleMK.predict(canonical_smiles_list)
+
+#Set smiles column to original smiles list
+result["smiles"] = smiles_list
 
 # write output in a .csv file
-with open(output_file, "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["value"]) # header
-    for o in outputs:
-        writer.writerow([o])
+result.to_csv(output_file, index=False)

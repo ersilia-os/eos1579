@@ -26,7 +26,7 @@ Mittal, A., Mohanty, S.K., Gautam, V. et al. Artificial intelligence uncovers ca
 - Checkpoints: N/A
 
 # License
-THE GPL-v3 license applies to all parts of the repository that are not externally maintained libraries. This repository uses the  externally maintained library "metabokiller," located at [/model](/model/framework/LICENSE) and licensed under an MIT license.
+This model is provided free of charge for academic purposes but commercial utilization requires approval by the authors. Please revise the License.md file for more information.
 
 # History 
 - Model was downloaded on 8/18/2022.

@@ -85,10 +85,10 @@ class Model(object):
             ).wait()
         with open(output_file, "r") as f:
             reader = csv.reader(f)
-            h = next(reader)
+            h = next(reader)[1:]
             R = []
             for r in reader:
-                R += [{"outcome": [Float(x) for x in r]}] # <-- EDIT: Modify according to type of output (Float, String...)
+                R += [{"outcome": [Float(x) for x in r]}][1:] # <-- EDIT: Modify according to type of output (Float, String...)
         meta = {
             "outcome": h
         }

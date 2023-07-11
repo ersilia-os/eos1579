@@ -23,6 +23,9 @@ Carcinogenicity is a result of several potential effects on  cells. This model p
 * [Source Code](https://github.com/the-ahuja-lab/Metabokiller)
 * Ersilia contributor: [brosular](https://github.com/brosular)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos1579)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://doi.org/10.1038/s41589-022-01110-7) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).

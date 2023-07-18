@@ -25,6 +25,8 @@ Carcinogenicity is a result of several potential effects on  cells. This model p
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos1579)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1579.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos1579) (AMD64, ARM64)
 
 ## Citation
 

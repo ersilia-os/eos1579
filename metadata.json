@@ -28,5 +28,11 @@
     "Publication": "https://doi.org/10.1038/s41589-022-01110-7",
     "Source Code": "https://github.com/the-ahuja-lab/Metabokiller",
     "License": "Non-commercial",
-    "Contributor": "brosular"
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1579.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1579",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
 }

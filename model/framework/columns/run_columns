@@ -1,0 +1,22 @@
+name,type,direction,description
+epigenetics_0,float,high,Porbability of not inducing epigenetic alterations (0)
+epigenetics_1,float,high,Porbability of inducing epigenetic alterations (1)
+epigenetics_preds,integer,high,Binary result for epigenetic alterations
+oxidative_0,float,high,Porbability of not inducing oxidative stress (0)
+oxidative_1,float,high,Porbability of inducing oxidative stress (1)
+oxidative_preds,integer,high,Binary result for oxidative stress
+ginstability_0,float,high,Porbability of not inducing genome instability(0)
+ginstability_1,float,high,Porbability of inducing genome instability (1)
+ginstability_preds,integer,high,Binary result for genome instability
+apoptosis_0,float,high,Porbability of not inducing apoptosis (0)
+apoptosis_1,float,high,Porbability of inducing apoptosis (1)
+apoptosis_preds,integer,high,Binary result for apoptosis
+proliferation_0,float,high,Porbability of not inducing pro proliferative response (0)
+proliferation_1,float,high,Porbability of inducing pro proliferative response (1)
+proliferation_preds,integer,high,Binary result for pro proliferative response
+electrophile_0,float,high,Porbability of not having electrophilic properties (0)
+electrophile_1,float,high,Porbability of having electrophilic properties (1)
+electrophile_preds,integer,high,Binary result for having electrophilic properties
+ensemble_0,float,high,Porbability of not being carciongenic overall (0)
+ensemble_1,float,high,Porbability of being carcinogenic overall (1)
+ensemble_preds,integer,high,Binary result for being carcinogenic overall

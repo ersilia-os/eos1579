@@ -21,7 +21,7 @@ canonical_smiles_list = [Chem.MolToSmiles(Chem.MolFromSmiles(smi), True) for smi
 
 #Run Metabokiller ensemble prediction
 result = EnsembleMK.predict(canonical_smiles_list)
-
+print(result)
 #Set smiles column to original smiles list
 result["smiles"] = smiles_list
 

@@ -1,7 +1,7 @@
 {
     "Identifier": "eos1579",
     "Slug": "metabokiller",
-    "Status": "Ready",
+    "Status": "Archived",
     "Title": "Carcinogenic potential of metabolites and small molecules",
     "Description": "Carcinogenicity is a result of several potential effects on  cells. This model predicts the carcinogenic potential of a small molecule based on their potential to induce cellular proliferation, genomic instability, oxidative stress, anti-apoptotic responses and epigenetic alterations. Metabokiller uses the Chemical Checker signaturizer to featurize the molecules, and the Lime package to provide interpretable results. Using Metabokiller, the authors screened a panel of human metabolites and experimentally demonstrated two of the predicted carcinogenic metabolites induced carcinogenic transformations in yeast and human cells.\n",
     "Mode": "Pretrained",
